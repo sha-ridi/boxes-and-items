@@ -13,10 +13,10 @@ Create two Blueprints: `BP_Item` and `BP_Boxes`.
 - Contains an integer variable `Index` (set as instance editable and expose on spawn).
 
 ### BP_Boxes
-- Consists of two hollow "boxes" with open tops (as shown in the reference image) and a `BoxCollision` component at the bottom of the boxes.
+- Consists of two hollow "boxes" with open tops and a `BoxCollision` component at the bottom of the boxes.
 
 ### Scenario Map
-- The map contains one `BP_Boxes` instance and ten `BP_Item` instances with `Index` values ranging from 1 to 10.
+- The map contains one `BP_Boxes` instance and ten `BP_Item` instances with `Index` values ranging from 0 to 9.
 
 ### Required Logic (Blueprint Implementation):
 1. **Item Movement:** When keys 1-0 are pressed, the `BP_Item` with the corresponding `Index` should move at a uniform speed to one of the two designated positions (`Pos`). The position is chosen randomly. (For example, pressing the "4" key moves the item with `Index = 4`).
